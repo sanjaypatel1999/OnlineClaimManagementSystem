@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RL59ZqoeSwa2N9SHq4csAXIlh/ZOPiPLZ9EetgXBEGgB7nEAros15FmAKjGPtc9DWvyf/+Jv3HhIdZVQJNCpcA==",
+  "success": true,
+  "projectFilePath": "E:\\Sunil Sir\\Proejcts\\ClaimApp\\ClaimApp\\ClaimApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

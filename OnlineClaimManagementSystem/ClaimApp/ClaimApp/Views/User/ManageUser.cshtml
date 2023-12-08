@@ -1,0 +1,136 @@
+﻿@{
+}
+
+
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Manage Users  &nbsp; <button class="btn btn-sm btn-info" id="btnAdd">+ Add New</button></h4>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered" id="tblUsers">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Name</td>
+                        <td>Email</td>
+                        <td>Mobile</td>
+                        <td>Manager</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!--modal for action hisotry-->
+<div class="modal fade" id="modalAddUser">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width:52pc; margin-left:-189px">
+            <div class="modal-header">
+                <h4 class="modal-title">Add New user</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <input type="hidden" class="form-control" id="hdnUserId" value="0" />
+                        <div class="form-group" id="formGroupUserName">
+                            <label>User Name <span class="mandatory">*</span></label>
+                            <input type="text" class="form-control" id="txtUserName" />
+                            <span id="errUserName"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group" id="formGroupEmailAddress">
+                            <label>Email Address <span class="mandatory">*</span></label>
+                            <input type="text" class="form-control" id="txtEmailAddress" />
+                            <span id="errEmailAddress"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                   <div class="row">
+                    <div class="col-6">
+                        <div class="form-group" id="formGroupMobileNumber">
+                            <label>Mobile Number</label>
+                            <input type="text" class="form-control" id="txtMobileNumber" />
+                            <span id="errMobileNumber"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group" id="formGroupManager">
+                            <label>Manager</label>
+                            <select class="form-control" id="ddlManager">
+                                <option value="-1">Select</option>
+                            </select>
+                            <span id="errManager"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group" id="formGroupPassword">
+                            <label>Password <span class="mandatory">*</span></label>
+                            <input type="password" class="form-control" id="txtPassword" />
+                            <span id="errPassword"></span>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group" id="formGroupConfirmPassword">
+                            <label>Confirm Password <span class="mandatory">*</span></label>
+                            <input type="text" class="form-control" id="txtConfirmPassword" />
+                            <span id="errConfirmPassword"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group" id="formGroupStatus">
+                            <label>Status <span class="mandatory">*</span></label>
+                            <select class="form-control" id="ddlStatus">
+                                <option value="-1">Select</option>
+                                <option value="1">Active</option>
+                                <option value="0">InActive</option>
+                            </select>
+                            <span id="errStatus"></span>
+                        </div>
+                    </div>                  
+                </div>
+
+                <div class="row">
+                    <div class="col-6 mt-3">
+                        <button id="btnReload" class="btn btn-info">Refresh</button>
+                    </div>
+                    <div class="col-6 mt-3">
+                        <button id="btnSubmit" class="btn btn-info float-right">Submit</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mt-3">
+                        <p id="msg"></p>
+                    </div>
+                </div>
+
+
+        </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!--End modal for action hisotry-->
+<script src="~/js/Users/ManageUsers.js" type="text/javascript"></script>
